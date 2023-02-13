@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "markdown-wasm": "^1.2.0"
+  }
+}

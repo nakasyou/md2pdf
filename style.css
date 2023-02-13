@@ -1,0 +1,33 @@
+.mainzone{
+  display:flex;
+  width:100%;
+  height:calc(100vh - 5rem);
+  box-sizing: border-box;
+}
+#result,#edit{
+  width:100%;
+  height:50%;
+  margin:10px;
+}
+#edit{
+  font-size:1.2em;
+}
+@media screen and (min-width:480px) {
+  #result,#edit{
+    width:50%;
+    height:100%;
+  }
+}
+#about{
+  height:2em;
+  width:100%;
+}
+body{
+  font-family: "Sawarabi Gothic";
+}
+#result{
+  overflow-x: scroll;
+  overflow-y: scroll;
+  border:0.5px solid #000000;
+  padding:0.5em;
+}

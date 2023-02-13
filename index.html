@@ -1,0 +1,29 @@
+<!doctype HTML>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <script src="https://cdn.jsdelivr.net/gh/rsms/markdown-wasm@v1.1.2/dist/markdown.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <div id='about'>
+      <span style="font-size:1.5rem">Markdown Editor</span>
+      <select id='font'>
+        <option value="Sawarabi Gothic">Sawarabi ゴジック</option>
+        <option value="serif">Serif</option>
+        <option value="sans-serif">Sans serif</option>
+      </select>
+      <button id="dlpdf">Download PDF</button>
+      <button id="clear"></button>
+    </div>
+    <div class="mainzone">
+      <textarea id='edit'></textarea>
+      <div id='result'>
+        <div id='out'></div>
+      </div>
+    </div>
+    <script src='main.js' type="module"></script>
+  </body>
+</html>
