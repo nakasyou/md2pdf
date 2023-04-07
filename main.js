@@ -7,6 +7,12 @@ import {dlpdf} from './btns.js';
 document.getElementById('dlpdf').addEventListener('click',e=>{
   dlpdf({edit:edit,result:result,out:out});
 });
+document.getElementById('open').addEventListener('click',e=>{
+  const open = document.createElement("input");
+  open.type = "file";
+  open.accept = "text/*";
+  open.click();
+});
 const font=document.getElementById('font');
 font.addEventListener('change',e=>{
   out.style.fontFamily=font.value;
