@@ -14,7 +14,7 @@ document.getElementById('open').addEventListener('click',e=>{
   open.onchange = e=>{
     const reader = new FileReader();
     reader.onload = () => {
-      alert(reader.result)
+      edit.value=reader.result;
     };
     reader.readAsText(e.files[0]);
   }
