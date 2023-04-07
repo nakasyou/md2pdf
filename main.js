@@ -10,8 +10,14 @@ document.getElementById('dlpdf').addEventListener('click',e=>{
 document.getElementById('open').addEventListener('click',e=>{
   const open = document.createElement("input");
   open.type = "file";
-  open.accept = "text/*";
   open.click();
+  open.onchange = e=>{
+    const reader = new FileReader();
+    reader.onload = () => {
+      alert(reader.result)
+    };
+    reader.readAsText(e.files[0]);
+  }
 });
 const font=document.getElementById('font');
 font.addEventListener('change',e=>{
